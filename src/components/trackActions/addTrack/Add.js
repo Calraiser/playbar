@@ -1,13 +1,16 @@
 import React from "react";
-import { Add, Icon } from "./Add.style";
 
-const AddComponent = ({
-  icon = "https://static.overlay-tech.com/assets/4695238a-6d18-4dbe-b4d3-98bd9c383b75.svg",
-}) => {
+import { ActionsItem } from "../trackActions.style";
+
+import Icons from "../../../img/Icons";
+
+const AddComponent = () => {
   return (
-    <Add>
-      <Icon alt="icon" src={icon} />
-    </Add>
+    <ActionsItem>
+      {Icons.map((item) => (
+        <div>{item.add}</div>
+      ))}
+    </ActionsItem>
   );
 };
 

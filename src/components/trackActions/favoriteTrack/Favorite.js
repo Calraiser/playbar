@@ -1,13 +1,15 @@
 import React from "react";
-import { Favorite, Icon } from "./Favorite.style";
 
-const FavoriteComponent = ({
-  icon = "https://static.overlay-tech.com/assets/93621746-000a-4ca4-8f20-64f86fa3b87f.svg",
-}) => {
+import { ActionsItem } from "../trackActions.style";
+import Icons from "../../../img/Icons";
+
+const FavoriteComponent = () => {
   return (
-    <Favorite>
-      <Icon alt="icon" src={icon} />
-    </Favorite>
+    <ActionsItem active>
+      {Icons.map((item) => (
+        <div>{item.favorite}</div>
+      ))}
+    </ActionsItem>
   );
 };
 

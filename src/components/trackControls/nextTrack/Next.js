@@ -1,13 +1,15 @@
 import React from "react";
-import { ForwardButton, Forward } from "./Next.style";
+import { Button } from "../../../App.style";
 
-const ForwardButtonComponent = ({
-  forward = "https://static.overlay-tech.com/assets/436969ee-5c57-483a-9697-6d8789906f69.svg",
-}) => {
+import Icons from "../../../img/Icons";
+
+const ForwardButtonComponent = () => {
   return (
-    <ForwardButton>
-      <Forward alt="forward" src={forward} />
-    </ForwardButton>
+    <Button>
+      {Icons.map((item) => (
+        <div>{item.next}</div>
+      ))}
+    </Button>
   );
 };
 

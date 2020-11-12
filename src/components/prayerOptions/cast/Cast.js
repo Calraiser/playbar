@@ -1,13 +1,15 @@
 import React from "react";
-import { Cast } from "./Cast.style";
+import { OptionsItem } from "../prayerOptions.style";
 
-import IconCast from "../../../img/cast.svg";
+import Icons from "../../../img/Icons";
 
 const CastComponent = () => {
   return (
-    <Cast>
-      <img src={IconCast} alt="" />
-    </Cast>
+    <OptionsItem>
+      {Icons.map((item) => (
+        <div>{item.cast}</div>
+      ))}
+    </OptionsItem>
   );
 };
 

@@ -10,7 +10,7 @@ export const Num0003 = styled.p`
   font-size: 10px;
   font-weight: 400;
   line-height: normal;
-  color: rgba(182, 187, 204, 1);
+  color: rgba(51, 51, 51, 1);
 `;
 export const FlexWrapperOne = styled.div`
   background-color: rgba(182, 187, 204, 1);
@@ -28,6 +28,6 @@ export const Num0328 = styled.p`
   font-size: 10px;
   font-weight: 400;
   line-height: normal;
-  color: rgba(182, 187, 204, 1);
+  color: rgba(51, 51, 51, 1);
   text-align: center;
 `;

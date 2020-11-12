@@ -8,4 +8,5 @@ export const TitleArtist = styled.p`
   font-weight: 700;
   line-height: normal;
   color: rgba(51, 51, 51, 1);
+  margin-bottom: 0;
 `;

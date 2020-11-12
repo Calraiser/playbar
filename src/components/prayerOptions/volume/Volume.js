@@ -1,13 +1,15 @@
 import React from "react";
-import { Volume } from "./Volume.style";
+import { OptionsItem } from "../prayerOptions.style";
 
-import IconVolume from "../../../img/volume.svg";
+import Icons from "../../../img/Icons";
 
 const VolumeComponent = () => {
   return (
-    <Volume>
-      <img src={IconVolume} alt="" />
-    </Volume>
+    <OptionsItem>
+      {Icons.map((item) => (
+        <div className="prayerOptions__item">{item.volume}</div>
+      ))}
+    </OptionsItem>
   );
 };
 

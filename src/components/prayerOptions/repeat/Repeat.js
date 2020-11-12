@@ -1,13 +1,15 @@
 import React from "react";
-import { Repeat } from "./Repeat.style";
+import { OptionsItem } from "../prayerOptions.style";
 
-import IconRepeat from "../../../img/repeat.svg";
+import Icons from "../../../img/Icons";
 
 const RepeatComponent = () => {
   return (
-    <Repeat>
-      <img src={IconRepeat} alt="" />
-    </Repeat>
+    <OptionsItem active>
+      {Icons.map((item) => (
+        <div className="prayerOptions__item">{item.repeat}</div>
+      ))}
+    </OptionsItem>
   );
 };
 

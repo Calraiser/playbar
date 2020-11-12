@@ -1,13 +1,15 @@
 import React from "react";
-import { Suffle } from "./Suffle.style";
+import { OptionsItem } from "../prayerOptions.style";
 
-import IconSuffle from "../../../img/suffle.svg";
+import Icons from "../../../img/Icons";
 
 const SuffleComponent = () => {
   return (
-    <Suffle>
-      <img src={IconSuffle} alt="" />
-    </Suffle>
+    <OptionsItem>
+      {Icons.map((item) => (
+        <div className="prayerOptions__item">{item.suffle}</div>
+      ))}
+    </OptionsItem>
   );
 };
 
